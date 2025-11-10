@@ -1,4 +1,4 @@
-class Livro {
+export class Livro {
   private titulo: string;
   private autor: string;
   private editora: string;
