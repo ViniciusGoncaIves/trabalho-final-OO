@@ -4,9 +4,9 @@ export abstract class Funcionario {
   no caso dessa questao na atividade pedia para criar salario com double, porem nao deu certo
   entao coloquei como number mesmo 
    */
-    private nome: String;
-    private salario: number;
-    private identificao: String;
+    public nome: String;
+    public salario: number;
+    public identificao: String;
 
  /* 
     Funcionario vai ser uma classe pai abstrata, sendo assim, todos que herdam dela
