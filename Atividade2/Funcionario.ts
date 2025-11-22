@@ -6,7 +6,7 @@ export abstract class Funcionario {
    */
     public nome: String;
     public salario: number;
-    public identificao: String;
+    public identificacao: String;
 
  /* 
     Funcionario vai ser uma classe pai abstrata, sendo assim, todos que herdam dela
@@ -16,7 +16,7 @@ export abstract class Funcionario {
     constructor(nome: String, salario: number, identificao: String){
         this.nome = nome;
         this.salario = salario;
-        this.identificao = identificao;
+        this.identificacao = identificao;
     }
 
     abstract calcularSalario(): number;
