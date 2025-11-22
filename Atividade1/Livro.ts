@@ -1,4 +1,4 @@
-// Classe que representa o livro da biblioteca
+// ! Classe que representa o livro da biblioteca
 export class Livro {
   private titulo: string;
   private autor: string;
@@ -6,7 +6,7 @@ export class Livro {
   private anoPublicacao: number;
   private disponivel: boolean;
 
-// constructor com os parâmetros para inicializar os atributos do livro no momnento da criação do objeto.  
+// ! constructor com os parâmetros para inicializar os atributos do livro no momnento da criação do objeto.  
   constructor(titulo: string,autor: string,editora: string,anoPublicacao: number,disponivel: boolean) {
     this.titulo = titulo;
     this.autor = autor;
@@ -16,12 +16,12 @@ export class Livro {
   }
 
   public emprestar(): boolean {
-    // valida se o livro esta diponivel para emprestimo
+    // ! valida se o livro esta diponivel para emprestimo
     if (!this.disponivel) {
       console.log(`O livro "${this.titulo}" já está emprestado.`);
       return false;
     }
-    // se estiver disponivel realiza o emprestimo
+    // ! se estiver disponivel realiza o emprestimo
     this.disponivel = false;
     console.log(`Empréstimo realizado: livro "${this.titulo}".`);
     return true;
@@ -30,18 +30,18 @@ export class Livro {
   
   
   public devolver(): boolean {
-    // valida se o livros ja nao foi devolvido
+    // ! valida se o livros ja nao foi devolvido
     if (this.disponivel) {
       console.log(`Não é possível devolver "${this.titulo}", pois ele já está disponível.`);
       return false;
     }
-    // se nao foi devolvido efetua a devolução
+    // ! se nao foi devolvido efetua a devolução
     this.disponivel = true;
     console.log(`Devolução realizada: "${this.titulo}" agora está disponível.`);
     return true;
   }
 
-  // get para obter o titulo do livro
+  // ! get para obter o titulo do livro
   public getTitulo(): string {
     return this.titulo;
   }
