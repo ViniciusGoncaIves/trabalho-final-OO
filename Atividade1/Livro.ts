@@ -23,7 +23,7 @@ export class Livro {
     }
     // se estiver disponivel realiza o emprestimo
     this.disponivel = false;
-    console.log(`Empréstimo realizado: livro "${this.titulo}" está emprestado.`);
+    console.log(`Empréstimo realizado: livro "${this.titulo}".`);
     return true;
   }
 

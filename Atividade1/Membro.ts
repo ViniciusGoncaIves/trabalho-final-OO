@@ -38,7 +38,7 @@ export class Membro {
   public devolverLivro(livro: Livro): boolean {
     // verifica se o membro realmente esta com o livro emprestado
     if (!this.livrosEmprestados.includes(livro)) {
-      console.log(`${this.nome} não pode devolver "${livro.getTitulo()}", pois nunca foi emprestado por ele.`);
+      console.log(`${this.nome} não pode devolver "${livro.getTitulo()}", pois ainda não foi emprestado por ele.`);
       return false;
     }
 
